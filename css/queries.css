@@ -1,0 +1,376 @@
+/**************************/
+/* BELOW 1104 */
+/**************************/
+/* 1104/16=69, prva vrednost je prelomna tacka, a druga pikseli po defaultu */
+@media (max-width: 69em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .section-hero {
+    background-position: center;
+  }
+
+  .section-hero .header ul {
+    column-gap: 1.4rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    gap: 3.2rem;
+    padding-bottom: 16rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  .footer-grid .services-grid-auto {
+    gap: 2.4rem;
+  }
+
+  .column-2,
+  .column-1,
+  .column-3 {
+    justify-self: center;
+  }
+}
+
+/**************************/
+/* BELOW 856 */
+/**************************/
+/* 856/16=53.5, prva vrednost je prelomna tacka, a druga pikseli po defaultu */
+@media (max-width: 53.5em) {
+  html {
+    /* 8px / 16px = 0.5 = 50%*/
+    font-size: 50%;
+  }
+
+  .btn-open-close[name='open'] {
+    display: block;
+  }
+
+  .icons-text {
+    gap: 2rem;
+  }
+
+  .section-motived .heading-motived {
+    padding-top: 27rem;
+    padding-bottom: 27rem;
+  }
+
+  /* MOBILE FUNK */
+  .class-for-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #111;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .class-for-mobile .main-nav-list {
+    grid-template-columns: auto !important;
+    grid-template-rows: repeat(5, auto);
+    height: 50rem;
+  }
+
+  .nav-open .class-for-mobile {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .btn-open[name='open'] {
+    display: none;
+  }
+
+  .nav-open .btn-open[name='close'] {
+    display: block;
+  }
+}
+
+/**************************/
+/* BELOW 704 */
+/**************************/
+/* 704/16=44, prva vrednost je prelomna tacka, a druga pikseli po defaultu */
+@media (max-width: 44em) {
+  /* SECTIONS */
+  .header {
+    margin-bottom: 4.8rem;
+  }
+
+  .section-hero {
+    padding-bottom: 10rem;
+  }
+
+  /* HERO */
+  .section-hero .hero h1 {
+    font-size: 6.2rem;
+  }
+
+  /* HEALTHY */
+  .section-healthy h2,
+  .section-healthy p {
+    text-align: center;
+  }
+
+  .section-healthy .healthy-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 0.5fr;
+    gap: 11rem;
+  }
+
+  .section-healthy .healthy-grid .overlay {
+    width: 32rem;
+  }
+
+  .icon-num-text {
+    justify-content: center;
+  }
+
+  .section-healthy .absolute-el {
+    top: 38rem;
+    right: 12rem;
+  }
+
+  /* PERSONAL-TR */
+  .personaltr-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 4.8rem;
+  }
+
+  .personaltr-grid .twicep {
+    margin-bottom: 3.2rem;
+  }
+
+  .personaltr-grid .img {
+    grid-row: 2/3;
+  }
+
+  .personaltr-grid img {
+    height: 80%;
+    box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.1);
+  }
+
+  /* MOTIVED */
+  .section-motived .heading-motived {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  /* CALL-TO-ACTION */
+  .section-call-to-action .grid-call-to-action {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+
+  .questions-grid {
+    margin-top: 3.6rem;
+    gap: 3rem;
+  }
+
+  /* FREE WORKOUT */
+  .free-workout-grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .free-workout-grid .free-workout-content {
+    padding: 2rem 3rem 0 3rem;
+    text-align: center;
+  }
+
+  .free-workout-grid .free-workout-content p {
+    margin-bottom: 3.2rem;
+  }
+
+  .free-workout-grid picture {
+    grid-row: 2/3;
+  }
+
+  /* FOOTER */
+  .footer-grid .services-grid-auto {
+    gap: 1.6rem;
+  }
+
+  .afrer-footer .right-side {
+    margin-bottom: 1.6rem;
+  }
+
+  /* AFTER FOOTER */
+  .afrer-footer .right-side {
+    gap: 1.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 528 */
+/**************************/
+/* 528/16=33, prva vrednost je prelomna tacka, a druga pikseli po defaultu */
+@media (max-width: 33em) {
+  /* HERO */
+  .section-hero h1,
+  .section-hero p {
+    text-align: center;
+  }
+
+  .section-hero .btn-num {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+  .section-hero .btn-num span {
+    font-size: 1.6rem;
+  }
+
+  /* HEALTHY */
+  .section-healthy .absolute-el {
+    left: auto;
+    right: auto;
+    width: 32rem;
+    top: 42rem;
+    clip-path: none;
+  }
+
+  /* SECTION WORK */
+  .images {
+    grid-template-columns: auto;
+  }
+
+  .btn-work {
+    top: 55%;
+    width: 19rem;
+  }
+
+  .btn-style,
+  .section-call-to-action .grid-call-to-action .btn-form {
+    padding: 1.3rem 2.5rem;
+  }
+
+  /* PERSONAL TRAINING */
+  .personaltr-grid img {
+    width: 100%;
+  }
+
+  /* TRAINERS */
+  .secion-trainers .images div {
+    margin: 0 !important;
+  }
+
+  /* MOTIVED */
+  .section-motived .heading-motived {
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 4.8rem;
+  }
+
+  /* CALL TO ACTION */
+  .section-call-to-action h2,
+  .section-call-to-action .questions-content .questions-content-text {
+    text-align: center;
+  }
+
+  .questions-grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin-top: 4rem;
+  }
+
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 4.8rem;
+    padding-bottom: 4.8rem;
+  }
+
+  .footer-grid .services-grid-auto {
+    gap: 2.4rem;
+  }
+
+  .footer h3,
+  .footer p,
+  .headings {
+    text-align: center !important;
+  }
+
+  .footer-grid .column-1 {
+    grid-column: 1;
+  }
+
+  .footer-grid .column-3 {
+    grid-column: 1/-1;
+  }
+
+  .footer-grid .image-get-fit {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+
+  /* AFTER-FOOTER */
+  .afrer-footer {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .afrer-footer .right-side {
+    justify-content: center;
+  }
+}
+
+/**************************/
+/* BELOW 352 */
+/**************************/
+/* 352/16=22, prva vrednost je prelomna tacka, a druga pikseli po defaultu */
+@media (max-width: 25em) {
+  /* HEALTHY LIFE */
+  .section-healthy .healthy-grid {
+    gap: 0;
+  }
+
+  .section-healthy .healthy-grid .overlay {
+    width: 100%;
+  }
+
+  .section-healthy .absolute-el {
+    position: static;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .section-healthy .absolute-el p {
+    font-size: 1.8rem;
+  }
+
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .footer-grid .column-3 .services-grid-auto {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 0;
+  }
+
+  .footer-grid ul li {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+/* - Font sizes (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 - Spacing system (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */ ;
